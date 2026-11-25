@@ -1,0 +1,10 @@
+{
+  "base": "https://api.example.com",
+  "cors": {"whitelist": ["http://a.com", "http://b.com", "http://c.com"]},
+  "endpoints": ["https://api.example.com/users", "https://api.example.com/orders"],
+  "host": "api.example.com",
+  "nested": {"url": "https://api.example.com/v2"},
+  "port": 8080,
+  "proto": "https",
+  "ref": "https://api.example.com/v2"
+}

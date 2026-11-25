@@ -1,0 +1,12 @@
+proto: https
+host: api.example.com
+base: ${proto}://${host}
+endpoints:
+  - ${base}/users
+  - ${base}/orders
+nested:
+  url: ${base}/v2
+cors:
+  whitelist: 'http://a.com, http://b.com, http://c.com'
+port: 8080
+ref: ${nested.url}
